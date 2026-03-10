@@ -1,0 +1,23 @@
+data:
+  raw_dir: data/raw
+  processed_dir: data/processed
+  splits_dir: data/splits
+  image_size: [512, 512]
+
+model:
+  in_channels: 3
+  out_channels: 1
+  features: [64, 128, 256, 512]
+
+training:
+  epochs: 50
+  batch_size: 8
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  device: cuda
+
+outputs:
+  weights_dir: weights
+  predictions_dir: outputs/predictions
+  logs_dir: outputs/logs
+  figures_dir: outputs/figures
